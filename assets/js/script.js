@@ -11,6 +11,6 @@ function handler(response) {
     for (var i = 0; i < response.items.length; i++) {
         var item = response.items[i];
         // in production code, item.htmlTitle should have the HTML entities escaped.
-        document.getElementById("content").innerHTML += "<br>" + item.htmlTitle;
+        document.getElementById("content").innerHTML += "<br>" + item.htmlTitle + "<br><img src='" + item.image.thumbnailLink + "'>";
     }
 }
